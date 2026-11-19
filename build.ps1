@@ -63,7 +63,7 @@ function Build-Page($lang, $cat) {
   foreach ($c in $cfg.categories) {
     if ($c.isMaster) { continue }
     if ($c.slug -eq $cat.slug) { $strip += '        <li class="is-current" aria-current="true">' + (Txt $c.label.$lang $lang) + '</li>' }
-    else { $strip += '        <li>' + (Txt $c.label.$lang $lang) + '</li>' }
+    else { $strip += '        <li><a href="' + $rootRel + (Page-Path $lang $c.slug $c.isMaster) + '">' + (Txt $c.label.$lang $lang) + '</a></li>' }
   }
 
   $tenants = @()
