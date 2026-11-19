@@ -67,7 +67,7 @@ function Build-Page($lang, $cat) {
   }
 
   $tenants = @()
-  foreach ($a in $cfg.anchors) { $tenants += '        <li>' + (Txt $a.$lang $lang) + '</li>' }
+  foreach ($a in $cfg.anchors) { $tenants += '        <li><img src="' + $rootRel + 'assets/tenants/' + $a.logo + '.png" alt="' + (Enc $a.$lang) + '" loading="lazy" decoding="async"></li>' }
 
   $catOpts = @()
   $sel = if ($cat.formValue) { '' } else { ' selected' }
