@@ -24,6 +24,16 @@
     { "ar": "هابي فتنس", "en": "Happy Fitness", "logo": "happy-fitness" },
     { "ar": "فن كويست", "en": "FunQuest", "logo": "funquest" }
   ],
+  "otherTenants": [
+    { "ar": "شباك بيروت", "en": "Shebbak Beirut", "logo": "shebbak" },
+    { "ar": "فيرجن موبايل", "en": "Virgin Mobile", "logo": "virgin-mobile" },
+    { "ar": "Whoa Tea", "en": "Whoa Tea", "logo": "whoa-tea" },
+    { "ar": "ميني's", "en": "Mini's", "logo": "minis" },
+    { "ar": "5ive", "en": "5ive", "logo": "5ive", "bg": "#989b92" },
+    { "ar": "لاش لاينز", "en": "Lash Lines Beauty Studio", "logo": "lash-lines" },
+    { "ar": "يلّو سبا", "en": "Yello Spa", "logo": "yello-spa", "bg": "#74816f" },
+    { "ar": "iN2", "en": "iN2", "logo": "in2", "bg": "#3a3f47" }
+  ],
   "bulletLibrary": {
     "residents": {
       "ar": "بجوار مشروع خزام (الشركة الوطنية للإسكان): أكثر من 300,000 ساكن و50,000 منزل جديد مخطط.",
@@ -54,6 +64,7 @@
       "fig2": "منزل جديد مخطط",
       "fig3": "من أراضي العارض فقط للاستخدام التجاري",
       "tenantsTitle": "مستأجرون رئيسيون موقّعون",
+      "tenantsMoreTitle": "ومستأجرون آخرون",
       "unitsTitle": "الوحدات المتاحة",
       "unitsNote": "بيانات الوحدات النهائية بانتظار قائمة بلاك ساند.",
       "colUnit": "الوحدة",
@@ -106,6 +117,7 @@
       "fig2": "new homes planned",
       "fig3": "of Al Arid land is commercial",
       "tenantsTitle": "Signed anchor tenants",
+      "tenantsMoreTitle": "Other tenants",
       "unitsTitle": "Available units",
       "unitsNote": "Final unit data is pending Blacksand's list.",
       "colUnit": "Unit",
