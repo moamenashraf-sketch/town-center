@@ -18,11 +18,11 @@
     "tower":          { "file": "tower",          "render": false, "todoPhoto": true,  "alt": { "ar": "مبنى في تاون سنتر", "en": "A Town Center building" } }
   },
   "anchors": [
-    { "ar": "أسواق التميمي", "en": "Al Tamimi Markets" },
-    { "ar": "بيتزا هت", "en": "Pizza Hut" },
-    { "ar": "صيدلية أستر", "en": "Aster Pharmacy" },
-    { "ar": "هابي فتنس", "en": "Happy Fitness" },
-    { "ar": "فن كويست", "en": "FunQuest" }
+    { "ar": "أسواق التميمي", "en": "Al Tamimi Markets", "logo": "tamimi" },
+    { "ar": "بيتزا هت", "en": "Pizza Hut", "logo": "pizza-hut" },
+    { "ar": "صيدلية أستر", "en": "Aster Pharmacy", "logo": "aster" },
+    { "ar": "هابي فتنس", "en": "Happy Fitness", "logo": "happy-fitness" },
+    { "ar": "فن كويست", "en": "FunQuest", "logo": "funquest" }
   ],
   "bulletLibrary": {
     "residents": {
