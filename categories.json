@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "baseUrl": "https://moamenashraf-sketch.github.io/town-center",
+    "publishTodoUnits": true,
+    "showLangSwitch": true
+  },
+  "facts": {
+    "residents": "300,000",
+    "homes": "50,000",
+    "commercialPct": "4"
+  },
+  "images": {
+    "hero":           { "file": "hero",           "render": false, "todoPhoto": false, "alt": { "ar": "تاون سنتر في المساء", "en": "Town Center at dusk" } },
+    "signage":        { "file": "signage",        "render": false, "todoPhoto": true,  "alt": { "ar": "واجهة تاون سنتر", "en": "Town Center facade" } },
+    "courtyard":      { "file": "courtyard",      "render": true,  "todoPhoto": true,  "alt": { "ar": "ساحة تاون سنتر", "en": "Town Center courtyard" } },
+    "facade-glass":   { "file": "facade-glass",   "render": false, "todoPhoto": true,  "alt": { "ar": "واجهة زجاجية في تاون سنتر", "en": "Glass facade at Town Center" } },
+    "night-portrait": { "file": "night-portrait", "render": false, "todoPhoto": true,  "alt": { "ar": "تاون سنتر ليلًا", "en": "Town Center at night" } },
+    "tower":          { "file": "tower",          "render": false, "todoPhoto": true,  "alt": { "ar": "مبنى في تاون سنتر", "en": "A Town Center building" } }
+  },
+  "anchors": [
+    { "ar": "أسواق التميمي", "en": "Al Tamimi Markets" },
+    { "ar": "بيتزا هت", "en": "Pizza Hut" },
+    { "ar": "صيدلية أستر", "en": "Aster Pharmacy" },
+    { "ar": "هابي فتنس", "en": "Happy Fitness" },
+    { "ar": "فن كويست", "en": "FunQuest" }
+  ],
+  "bulletLibrary": {
+    "residents": {
+      "ar": "بجوار مشروع خزام (الشركة الوطنية للإسكان): أكثر من 300,000 ساكن و50,000 منزل جديد مخطط.",
+      "en": "Next to Khuzam (NHC): 300,000+ residents and 50,000 new homes planned."
+    },
+    "sec": {
+      "ar": "بجوار الشركة السعودية للكهرباء: قوة عمل ثابتة طوال أيام الأسبوع.",
+      "en": "Next to the Saudi Electricity Company: a steady weekday workforce."
+    },
+    "commercial": {
+      "ar": "4% فقط من أراضي العارض تجارية (96% سكنية): عرض تجاري محدود في الحي.",
+      "en": "Only 4% of Al Arid land is commercial (96% residential): limited commercial supply."
+    },
+    "anchors": {
+      "ar": "مستأجرون رئيسيون موقّعون: أسواق التميمي، بيتزا هت، صيدلية أستر، هابي فتنس، فن كويست.",
+      "en": "Signed anchors: Al Tamimi Markets, Pizza Hut, Aster Pharmacy, Happy Fitness, FunQuest."
+    }
+  },
+  "ui": {
+    "ar": {
+      "brand": "تاون سنتر",
+      "langSwitchLabel": "English",
+      "cta": "احجز زيارة الموقع",
+      "whyTitle": "ليش تاون سنتر؟",
+      "stripTitle": "نبحث عن أنشطة الاحتياجات اليومية",
+      "proofTitle": "أرقام تهمّ مشروعك",
+      "fig1": "ساكن في خزام وامتداد العارض",
+      "fig2": "منزل جديد مخطط",
+      "fig3": "من أراضي العارض فقط للاستخدام التجاري",
+      "tenantsTitle": "مستأجرون رئيسيون موقّعون",
+      "unitsTitle": "الوحدات المتاحة",
+      "unitsNote": "بيانات الوحدات النهائية بانتظار قائمة بلاك ساند.",
+      "colUnit": "الوحدة",
+      "colZone": "المنطقة",
+      "colArea": "المساحة (م²)",
+      "colFrontage": "الواجهة",
+      "colHandover": "موعد التسليم",
+      "todoBadge": "TODO: بيانات مؤقتة",
+      "formTitle": "احجز زيارة الموقع",
+      "formSub": "عبّ البيانات ويتواصل معك فريق التأجير.",
+      "fName": "الاسم الكامل",
+      "fMobile": "رقم الجوال",
+      "fMobileHint": "مثال: 0501234567 أو +966501234567",
+      "fBusiness": "اسم النشاط أو العلامة التجارية",
+      "fCategory": "النشاط",
+      "fCategoryPlaceholder": "اختر النشاط",
+      "fOther": "أخرى",
+      "fBranches": "عدد الفروع الحالية",
+      "fArea": "المساحة المطلوبة",
+      "fOpening": "موعد الافتتاح المستهدف",
+      "fCr": "هل لديك سجل تجاري ساري؟",
+      "fYes": "نعم",
+      "fNo": "لا",
+      "fMessage": "رسالتك (اختياري)",
+      "fSelect": "اختر",
+      "fConsent": "أوافق على تواصل فريق تأجير تاون سنتر معي عبر الاتصال والواتساب.",
+      "fSubmit": "أرسل الطلب",
+      "fSending": "جارٍ الإرسال…",
+      "errRequired": "هذا الحقل مطلوب.",
+      "errMobile": "أدخل رقم جوال سعودي صحيح (05XXXXXXXX أو +9665XXXXXXXX).",
+      "errConsent": "الموافقة على التواصل مطلوبة لإرسال الطلب.",
+      "errSubmit": "تعذّر الإرسال. حاول مرة أخرى.",
+      "thanksTitle": "وصلنا طلبك",
+      "thanksText": "فريق التأجير يتواصل معك قريبًا.",
+      "thanksDemo": "وضع تجريبي: لم يُضبط رابط إرسال النموذج بعد، ولم تُرسل أي بيانات.",
+      "privacy": "تُستخدم بياناتك فقط للتواصل بخصوص تأجير وحدة في تاون سنتر، وفق نظام حماية البيانات الشخصية.",
+      "credit": "تاون سنتر — من تطوير بلاك ساند",
+      "renderTag": "تصور فني",
+      "callLabel": "اتصل",
+      "emailLabel": "راسلنا"
+    },
+    "en": {
+      "brand": "Town Center",
+      "langSwitchLabel": "العربية",
+      "cta": "Book a site visit",
+      "whyTitle": "Why Town Center?",
+      "stripTitle": "We are looking for daily-need businesses",
+      "proofTitle": "Numbers that matter to your business",
+      "fig1": "residents in Khuzam and Al Arid's expansion",
+      "fig2": "new homes planned",
+      "fig3": "of Al Arid land is commercial",
+      "tenantsTitle": "Signed anchor tenants",
+      "unitsTitle": "Available units",
+      "unitsNote": "Final unit data is pending Blacksand's list.",
+      "colUnit": "Unit",
+      "colZone": "Zone",
+      "colArea": "Area (m²)",
+      "colFrontage": "Frontage",
+      "colHandover": "Handover",
+      "todoBadge": "TODO: placeholder data",
+      "formTitle": "Book a site visit",
+      "formSub": "Fill in your details and the leasing team will contact you.",
+      "fName": "Full name",
+      "fMobile": "Mobile number",
+      "fMobileHint": "Example: 0501234567 or +966501234567",
+      "fBusiness": "Business or brand name",
+      "fCategory": "Category",
+      "fCategoryPlaceholder": "Select a category",
+      "fOther": "Other",
+      "fBranches": "Current branches",
+      "fArea": "Area needed",
+      "fOpening": "Target opening",
+      "fCr": "Do you have an active CR?",
+      "fYes": "Yes",
+      "fNo": "No",
+      "fMessage": "Message (optional)",
+      "fSelect": "Select",
+      "fConsent": "I agree to be contacted by the Town Center leasing team by phone and WhatsApp.",
+      "fSubmit": "Send request",
+      "fSending": "Sending…",
+      "errRequired": "This field is required.",
+      "errMobile": "Enter a valid Saudi mobile number (05XXXXXXXX or +9665XXXXXXXX).",
+      "errConsent": "Consent to be contacted is required to submit.",
+      "errSubmit": "Could not send. Please try again.",
+      "thanksTitle": "We received your request",
+      "thanksText": "The leasing team will contact you shortly.",
+      "thanksDemo": "Demo mode: no form endpoint is configured yet, so nothing was sent.",
+      "privacy": "Your details are used only to contact you about leasing a unit at Town Center, in line with the Personal Data Protection Law (PDPL).",
+      "credit": "Town Center — developed by Blacksand",
+      "renderTag": "Artist's impression",
+      "callLabel": "Call",
+      "emailLabel": "Email"
+    }
+  },
+  "options": {
+    "branches": [
+      { "v": "0", "ar": "0", "en": "0" },
+      { "v": "1", "ar": "1", "en": "1" },
+      { "v": "2-5", "ar": "2–5", "en": "2–5" },
+      { "v": "6+", "ar": "6+", "en": "6+" }
+    ],
+    "area": [
+      { "v": "<50", "ar": "أقل من 50 م²", "en": "Under 50 m²" },
+      { "v": "50-100", "ar": "50–100 م²", "en": "50–100 m²" },
+      { "v": "100-200", "ar": "100–200 م²", "en": "100–200 m²" },
+      { "v": "200-400", "ar": "200–400 م²", "en": "200–400 m²" },
+      { "v": "400+", "ar": "أكثر من 400 م²", "en": "Over 400 m²" }
+    ],
+    "opening": [
+      { "v": "0-3", "ar": "خلال 3 أشهر", "en": "Within 3 months" },
+      { "v": "3-6", "ar": "من 3 إلى 6 أشهر", "en": "3–6 months" },
+      { "v": "6-12", "ar": "من 6 إلى 12 شهرًا", "en": "6–12 months" },
+      { "v": "later", "ar": "لاحقًا", "en": "Later" }
+    ]
+  },
+  "categories": [
+    {
+      "slug": "master",
+      "isMaster": true,
+      "label": { "ar": "عام", "en": "General" },
+      "formValue": "",
+      "image": "hero",
+      "headline": { "ar": "وحدتك التجارية بجوار أكثر من 300,000 ساكن في العارض", "en": "Your next unit beside 300,000+ residents in Al Arid" },
+      "sub": { "ar": "تاون سنتر مركز مجتمعي مفتوح في العارض شمال الرياض، من تطوير بلاك ساند، يؤجّر وحدات لأنشطة الاحتياجات اليومية.", "en": "Town Center is an open-air community centre in Al Arid, north Riyadh, developed by Blacksand, leasing units to daily-need businesses." },
+      "bullets": ["residents", "sec", "commercial"],
+      "metaTitle": { "ar": "تأجير وحدة تجارية في تاون سنتر العارض | بلاك ساند", "en": "Lease a unit at Town Center, Al Arid | Blacksand" },
+      "metaDescription": { "ar": "وحدات للتأجير في مركز مجتمعي مفتوح بجوار خزام والشركة السعودية للكهرباء، شمال الرياض. احجز زيارة الموقع.", "en": "Units for lease in an open-air community centre beside Khuzam and the Saudi Electricity Company, north Riyadh. Book a site visit." }
+    },
+    {
+      "slug": "barbershop",
+      "label": { "ar": "حلاق رجالي", "en": "Men's barber" },
+      "formValue": "barbershop",
+      "image": "signage",
+      "headline": { "ar": "أكثر من 300 ألف ساكن جنبك… وما فيه حلاق رجالي في المركز", "en": "300,000+ residents next door. No men's barber on site yet." },
+      "sub": { "ar": "افتح صالونك الرجالي في مركز مجتمعي مفتوح بالعارض شمال الرياض، بجوار مشروع خزام والشركة السعودية للكهرباء.", "en": "Open your men's salon in an open-air community centre in Al Arid, north Riyadh, beside Khuzam and the Saudi Electricity Company." },
+      "bullets": ["residents", "anchors", "commercial"],
+      "metaTitle": { "ar": "وحدة لصالون حلاقة رجالي للإيجار في تاون سنتر العارض", "en": "Men's barbershop unit for lease at Town Center, Al Arid" },
+      "metaDescription": { "ar": "افتح صالونك الرجالي بجوار أكثر من 300,000 ساكن في خزام وامتداد العارض. احجز زيارة الموقع.", "en": "Open your men's salon beside 300,000+ residents in Khuzam and Al Arid's expansion. Book a site visit." }
+    },
+    {
+      "slug": "laundry",
+      "label": { "ar": "مغسلة", "en": "Laundry" },
+      "formValue": "laundry",
+      "image": "courtyard",
+      "headline": { "ar": "افتح مغسلتك في قلب العارض", "en": "Open your laundry where Al Arid shops every week" },
+      "sub": { "ar": "سكان خزام يمرّون على التميمي كل أسبوع، والمغسلة الوحيدة الناقصة عندنا هي مغسلتك.", "en": "Khuzam residents shop at Al Tamimi every week, and the one laundry we are missing is yours." },
+      "bullets": ["residents", "anchors", "commercial"],
+      "metaTitle": { "ar": "وحدة لمغسلة ملابس للإيجار في تاون سنتر العارض", "en": "Laundry unit for lease at Town Center, Al Arid" },
+      "metaDescription": { "ar": "افتح مغسلتك في مركز مجتمعي مفتوح بجوار خزام وأسواق التميمي. احجز زيارة الموقع.", "en": "Open your laundry in an open-air community centre beside Khuzam and Al Tamimi Markets. Book a site visit." }
+    },
+    {
+      "slug": "tailoring",
+      "label": { "ar": "تفصيل (ثوب وعباية)", "en": "Tailoring (thobe & abaya)" },
+      "formValue": "tailoring",
+      "image": "night-portrait",
+      "headline": { "ar": "فرعك الجديد للتفصيل في شمال الرياض", "en": "Your next tailoring branch in north Riyadh" },
+      "sub": { "ar": "افتح فرع تفصيل الثوب والعباية في مركز مجتمعي مفتوح بالعارض، بجوار أكثر من 300,000 ساكن.", "en": "Open a thobe and abaya tailoring branch in an open-air community centre in Al Arid, beside 300,000+ residents." },
+      "bullets": ["residents", "sec", "commercial"],
+      "metaTitle": { "ar": "وحدة لتفصيل الثوب والعباية للإيجار في تاون سنتر العارض", "en": "Thobe and abaya tailoring unit for lease at Town Center, Al Arid" },
+      "metaDescription": { "ar": "فرعك الجديد للتفصيل بجوار خزام والشركة السعودية للكهرباء في شمال الرياض. احجز زيارة الموقع.", "en": "Your next tailoring branch beside Khuzam and the Saudi Electricity Company in north Riyadh. Book a site visit." }
+    },
+    {
+      "slug": "coffee-bakery",
+      "label": { "ar": "قهوة ومخبز", "en": "Coffee & bakery" },
+      "formValue": "coffee-bakery",
+      "image": "tower",
+      "headline": { "ar": "قهوتك أول محطة لموظفي الكهرباء وسكان خزام", "en": "Be the first coffee stop for SEC staff and Khuzam residents" },
+      "sub": { "ar": "كوفي أو مخبز: وحدة بين موقع عمل ثابت وحي سكني متنامٍ.", "en": "Café or bakery: a unit between a steady workplace and a growing residential neighbourhood." },
+      "bullets": ["sec", "residents", "anchors"],
+      "metaTitle": { "ar": "وحدة لكوفي أو مخبز للإيجار في تاون سنتر العارض", "en": "Café or bakery unit for lease at Town Center, Al Arid" },
+      "metaDescription": { "ar": "كوفي أو مخبز بجوار الشركة السعودية للكهرباء ومشروع خزام السكني. احجز زيارة الموقع.", "en": "A café or bakery beside the Saudi Electricity Company and the Khuzam housing project. Book a site visit." }
+    },
+    {
+      "slug": "phone-repair",
+      "label": { "ar": "صيانة جوالات", "en": "Phone repair" },
+      "formValue": "phone-repair",
+      "image": "facade-glass",
+      "headline": { "ar": "صيانة الجوالات بجوار فيرجن موبايل", "en": "Phone repair next to Virgin Mobile" },
+      "sub": { "ar": "وحدة صيانة وإكسسوارات في مركز يقصده سكان الحي وموظفو المنطقة.", "en": "A repair and accessories unit in a centre serving the neighbourhood's residents and the area's workforce." },
+      "bullets": ["anchors", "residents", "commercial"],
+      "metaTitle": { "ar": "وحدة لصيانة الجوالات للإيجار في تاون سنتر العارض", "en": "Phone repair unit for lease at Town Center, Al Arid" },
+      "metaDescription": { "ar": "وحدة لصيانة الجوالات في مركز مجتمعي مفتوح شمال الرياض. احجز زيارة الموقع.", "en": "A phone repair unit in an open-air community centre in north Riyadh. Book a site visit." }
+    },
+    {
+      "slug": "shoe-keys",
+      "label": { "ar": "إصلاح أحذية ومفاتيح", "en": "Shoe repair & keys" },
+      "formValue": "shoe-keys",
+      "image": "hero",
+      "headline": { "ar": "خدمة سريعة في مكان يمرّ فيه الكل", "en": "A quick-service unit where everyone passes" },
+      "sub": { "ar": "إصلاح أحذية ونسخ مفاتيح: وحدة صغيرة بجوار محلات الاحتياجات اليومية.", "en": "Shoe repair and key cutting: a compact unit beside the daily-need stores." },
+      "bullets": ["sec", "residents", "anchors"],
+      "metaTitle": { "ar": "وحدة لإصلاح الأحذية ونسخ المفاتيح للإيجار في تاون سنتر", "en": "Shoe repair and key cutting unit for lease at Town Center" },
+      "metaDescription": { "ar": "وحدة خدمة سريعة في مركز مجتمعي مفتوح بالعارض شمال الرياض. احجز زيارة الموقع.", "en": "A quick-service unit in an open-air community centre in Al Arid, north Riyadh. Book a site visit." }
+    }
+  ]
+}
