@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{title}}</title>
+<meta name="description" content="{{description}}" />
+<link rel="canonical" href="{{canonical}}" />
+<link rel="alternate" hreflang="ar" href="{{url_ar}}" />
+<link rel="alternate" hreflang="en" href="{{url_en}}" />
+<link rel="alternate" hreflang="x-default" href="{{url_ar}}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Town Center" />
+<meta property="og:title" content="{{title}}" />
+<meta property="og:description" content="{{description}}" />
+<meta property="og:url" content="{{canonical}}" />
+<meta property="og:image" content="{{og_image}}" />
+<meta property="og:locale" content="{{og_locale}}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{title}}" />
+<meta name="twitter:description" content="{{description}}" />
+<meta name="twitter:image" content="{{og_image}}" />
+<link rel="icon" href="{{root}}assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="{{lproot}}lp.css" />
+</head>
+<body data-slug="{{slug}}" data-lang="{{lang}}">
+
+<header class="top">
+  <div class="wrap top-in">
+    <img class="logo" src="{{root}}assets/town-center-logo.png" alt="{{ui_brand}}" width="120" height="54" />
+    {{lang_switch}}
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <h1>{{headline}}</h1>
+        <p class="sub">{{sub}}</p>
+        <a class="btn" href="#form" data-cta>{{ui_cta}}</a>
+      </div>
+      <figure class="hero-img">
+        <img src="{{hero_img}}" alt="{{hero_alt}}" width="1000" height="750" fetchpriority="high" decoding="async" />
+        {{render_tag}}
+      </figure>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <h2>{{ui_whyTitle}}</h2>
+      <ol class="why-list">
+{{bullets}}
+      </ol>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="wrap">
+      <h2>{{ui_stripTitle}}</h2>
+      <ul class="chips">
+{{strip}}
+      </ul>
+    </div>
+  </section>
+
+  <section class="proof">
+    <div class="wrap">
+      <h2>{{ui_proofTitle}}</h2>
+      <div class="figs">
+        <div class="fig"><b class="num">{{fact_residents}}+</b><span>{{ui_fig1}}</span></div>
+        <div class="fig"><b class="num">{{fact_homes}}</b><span>{{ui_fig2}}</span></div>
+        <div class="fig"><b class="num">{{fact_commercialPct}}%</b><span>{{ui_fig3}}</span></div>
+      </div>
+      <h3>{{ui_tenantsTitle}}</h3>
+      <ul class="pills">
+{{tenants}}
+      </ul>
+    </div>
+  </section>
+{{units_section}}
+  <section class="formsec" id="form">
+    <div class="wrap form-wrap">
+      <h2>{{ui_formTitle}}</h2>
+      <p class="form-sub">{{ui_formSub}}</p>
+      <form id="leadForm" novalidate autocomplete="on">
+        <div class="grid">
+          <div class="field">
+            <label for="f-name">{{ui_fName}}</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name" />
+            <p class="err" id="e-name" role="alert" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-mobile">{{ui_fMobile}}</label>
+            <input id="f-mobile" name="mobile" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required aria-describedby="h-mobile e-mobile" placeholder="05XXXXXXXX" />
+            <p class="hint" id="h-mobile">{{ui_fMobileHint}}</p>
+            <p class="err" id="e-mobile" role="alert" hidden></p>
+          </div>
+          <div class="field full">
+            <label for="f-business">{{ui_fBusiness}}</label>
+            <input id="f-business" name="business" type="text" autocomplete="organization" required aria-describedby="e-business" />
+            <p class="err" id="e-business" role="alert" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-category">{{ui_fCategory}}</label>
+            <select id="f-category" name="category" required aria-describedby="e-category">
+{{category_options}}
+            </select>
+            <p class="err" id="e-category" role="alert" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-branches">{{ui_fBranches}}</label>
+            <select id="f-branches" name="branches" required aria-describedby="e-branches">
+              <option value="">{{ui_fSelect}}</option>
+{{branch_options}}
+            </select>
+            <p class="err" id="e-branches" role="alert" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-area">{{ui_fArea}}</label>
+            <select id="f-area" name="area" required aria-describedby="e-area">
+              <option value="">{{ui_fSelect}}</option>
+{{area_options}}
+            </select>
+            <p class="err" id="e-area" role="alert" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-opening">{{ui_fOpening}}</label>
+            <select id="f-opening" name="opening" required aria-describedby="e-opening">
+              <option value="">{{ui_fSelect}}</option>
+{{opening_options}}
+            </select>
+            <p class="err" id="e-opening" role="alert" hidden></p>
+          </div>
+          <fieldset class="field full radios" aria-describedby="e-cr">
+            <legend>{{ui_fCr}}</legend>
+            <label class="radio"><input type="radio" name="cr" value="yes" required /> <span>{{ui_fYes}}</span></label>
+            <label class="radio"><input type="radio" name="cr" value="no" /> <span>{{ui_fNo}}</span></label>
+            <p class="err" id="e-cr" role="alert" hidden></p>
+          </fieldset>
+          <div class="field full">
+            <label for="f-message">{{ui_fMessage}}</label>
+            <textarea id="f-message" name="message" rows="3"></textarea>
+          </div>
+          <div class="field full consent">
+            <label class="check"><input id="f-consent" type="checkbox" name="consent" value="yes" required aria-describedby="e-consent" /> <span>{{ui_fConsent}}</span></label>
+            <p class="err" id="e-consent" role="alert" hidden></p>
+          </div>
+        </div>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <input type="hidden" name="utm_source" /><input type="hidden" name="utm_medium" /><input type="hidden" name="utm_campaign" />
+        <input type="hidden" name="utm_content" /><input type="hidden" name="utm_term" /><input type="hidden" name="gclid" />
+        <input type="hidden" name="fbclid" /><input type="hidden" name="sc_click_id" />
+        <input type="hidden" name="landing_slug" value="{{slug}}" /><input type="hidden" name="language" value="{{lang}}" />
+        <p class="err form-err" id="e-form" role="alert" hidden></p>
+        <button class="btn submit" type="submit" id="submitBtn">{{ui_fSubmit}}</button>
+        <p class="privacy">{{ui_privacy}}</p>
+      </form>
+      <div class="thanks" id="thanks" role="status" tabindex="-1" hidden>
+        <div class="tick" aria-hidden="true">✓</div>
+        <h3>{{ui_thanksTitle}}</h3>
+        <p>{{ui_thanksText}}</p>
+        <p class="demo" id="thanksDemo" hidden>{{ui_thanksDemo}}</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <img src="{{root}}assets/blacksand-logo.png" alt="Blacksand" width="96" height="50" loading="lazy" />
+    <p>{{ui_credit}}</p>
+    <p class="privacy-foot">{{ui_privacy}}</p>
+    <div class="direct" id="direct" hidden></div>
+  </div>
+</footer>
+
+<script>window.TC_PAGE={slug:"{{slug}}",lang:"{{lang}}",callLabel:"{{ui_callLabel}}",emailLabel:"{{ui_emailLabel}}",errors:{required:"{{ui_errRequired}}",mobile:"{{ui_errMobile}}",consent:"{{ui_errConsent}}",submit:"{{ui_errSubmit}}"},sending:"{{ui_fSending}}"};</script>
+<script src="{{lproot}}config.js"></script>
+<script src="{{lproot}}lp.js" defer></script>
+</body>
+</html>
