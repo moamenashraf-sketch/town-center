@@ -66,8 +66,16 @@ function Build-Page($lang, $cat) {
     else { $strip += '        <li><a href="' + $rootRel + (Page-Path $lang $c.slug $c.isMaster) + '">' + (Txt $c.label.$lang $lang) + '</a></li>' }
   }
 
-  $tenants = @()
-  foreach ($a in $cfg.anchors) { $tenants += '        <li><img src="' + $rootRel + 'assets/tenants/' + $a.logo + '.png" alt="' + (Enc $a.$lang) + '" loading="lazy" decoding="async"></li>' }
+  function Logo-Items($list) {
+    $o = @()
+    foreach ($a in $list) {
+      $st = if ($a.bg) { ' style="background:' + $a.bg + '"' } else { '' }
+      $o += '        <li' + $st + '><img src="' + $rootRel + 'assets/tenants/' + $a.logo + '.png" alt="' + (Enc $a.$lang) + '" loading="lazy" decoding="async"></li>'
+    }
+    $o -join "`n"
+  }
+  $tenants = Logo-Items $cfg.anchors
+  $tenants2 = Logo-Items $cfg.otherTenants
 
   $catOpts = @()
   $sel = if ($cat.formValue) { '' } else { ' selected' }
@@ -108,7 +116,7 @@ function Build-Page($lang, $cat) {
     lang_switch = $langSwitch
     headline = (Txt $cat.headline.$lang $lang); sub = (Txt $cat.sub.$lang $lang)
     hero_img = $rootRel + "assets/lp/hero-$($img.file).jpg"; hero_alt = (Enc $img.alt.$lang); render_tag = $renderTag
-    bullets = ($bullets -join "`n"); strip = ($strip -join "`n"); tenants = ($tenants -join "`n")
+    bullets = ($bullets -join "`n"); strip = ($strip -join "`n"); tenants = $tenants; tenants2 = $tenants2
     units_section = $unitsHtml
     category_options = ($catOpts -join "`n")
     branch_options = (Opts $cfg.options.branches); area_options = (Opts $cfg.options.area); opening_options = (Opts $cfg.options.opening)
