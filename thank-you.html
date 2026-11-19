@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>شكرًا لك · تاون سنتر | بلاك ساند</title>
+<meta name="robots" content="noindex" />
+<link rel="icon" href="assets/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+
+<!-- ===== CONVERSION PIXELS — paste tracking snippets below (fire once on this page) =====
+     Meta Pixel:    fbq('track','Lead');
+     Google Ads:    gtag('event','conversion',{send_to:'AW-XXXXXXXXX/XXXXXXXX'});
+     Snap Pixel:    snaptr('track','SIGN_UP');
+     TikTok Pixel:  ttq.track('SubmitForm');
+     ====================================================================== -->
+</head>
+<body class="lang-ar">
+<header class="scrolled" id="header">
+  <div class="wrap nav">
+    <a href="index.html" class="nav-logo"><img src="assets/town-center-logo.png" alt="تاون سنتر" /></a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langBtn" aria-label="Switch language"><span data-ar="EN" data-en="ع">ع</span></button>
+    </div>
+  </div>
+</header>
+<main class="ty">
+  <div class="wrap">
+    <div class="form-success">
+      <div class="tick"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg></div>
+      <h1 data-ar="شكرًا لك" data-en="Thank you">Thank you</h1>
+      <p data-ar="تم استلام طلبك وسيتواصل معك فريقنا قريبًا." data-en="Your request has been received. Our team will contact you shortly.">Your request has been received. Our team will contact you shortly.</p>
+      <a href="index.html" class="btn btn-primary"><span data-ar="العودة إلى تاون سنتر" data-en="Back to Town Center">Back to Town Center</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+</main>
+<script>
+(function(){
+  var lang="ar";
+  try{ if(localStorage.getItem('towncenter-lang')==='en') lang='en'; }catch(e){}
+  function apply(l){
+    lang=l; document.documentElement.lang=l; document.documentElement.dir=l==='ar'?'rtl':'ltr';
+    document.body.classList.toggle('lang-ar',l==='ar'); document.body.classList.toggle('lang-en',l==='en');
+    document.querySelectorAll('[data-ar]').forEach(function(el){ el.innerHTML=el.getAttribute('data-'+l); });
+    try{localStorage.setItem('towncenter-lang',l);}catch(e){}
+  }
+  document.getElementById('langBtn').addEventListener('click',function(){ apply(lang==='ar'?'en':'ar'); });
+  apply(lang);
+})();
+</script>
+</body>
+</html>
